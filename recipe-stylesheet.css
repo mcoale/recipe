@@ -408,6 +408,9 @@ input#burger:checked ~ #patty {
     grid-template-rows: repeat(7, 60px);
 }
 
+* {
+    transition: all 0.5s;
+}
 
 @media screen and (min-width:768px) {
     body {
@@ -526,10 +529,10 @@ input#burger:checked ~ #patty {
         width: 768px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         list-style: none;
-        background-color: transparent;
+        background-color: rgba(242, 242, 242, 0.7);
         padding: 20px 0 20px 0px;
         margin: 0 auto;
-        backdrop-filter: blur(100px);
+        backdrop-filter: blur(5px);
         z-index: 1;
     }
 
@@ -643,6 +646,7 @@ input#burger:checked ~ #patty {
         width: 60px;
         margin: 40px 0 0 30px;
     }
+
 }
 
 @media screen and (min-width:1280px) {
