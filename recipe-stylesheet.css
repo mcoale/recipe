@@ -1,0 +1,906 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+    display: grid;
+    background-color: rgba(122, 191, 191, 0.5);
+}
+
+span, h4, input#burger, footer h1 {
+    display: none;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 414px;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+}
+
+header {
+    height: 100px;
+    background-color: #F2F2F2;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Bebas Neue";
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 150px;
+}
+
+#dish {
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: 414px;
+    grid-template-rows: auto;   
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#dish img, #dish div p {
+    width: 414px;
+}
+
+#dish div p {
+    display: block;
+    width: 400px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+}
+
+menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    background-color: #F2F2F2;
+    padding: 0px;
+    margin: 0 auto 5px auto;
+}
+
+menu li {
+    color: #EB5428;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+li p {
+    margin: -5px 0 0 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    width: 414px;
+    height: 80px;
+    background-color: #FFFFFF;
+    border-bottom-style: outset;
+    border-color: #fefdfd;
+    position: fixed;
+    z-index: 2;
+}
+
+nav label span {
+    display: block;
+    color: #000000;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    text-align: center;
+}
+
+nav a:link, nav a:visited, nav a:hover {
+    text-decoration: none;
+}
+
+nav svg, form svg {
+    display: block;
+    margin: 0 auto;
+}
+
+nav label {
+    margin-top: 10px;
+}
+
+#logo {
+    background-color: #EB5428;
+}
+
+#logo svg {
+    margin-top: 10px;
+}
+
+label p, a p {
+    width: 60px;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    color: #000000;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#login {
+    width: 60px;
+    display: block;
+    margin: auto;
+}
+
+form {
+    display: grid;
+    width: 325px;
+    grid-template-columns: 273px 51px;
+    grid-template-rows: 50px;
+    background-color: #F2F2F2;
+    position: absolute;
+    margin-top: 113px;
+    margin-left: 40px;
+}
+
+form input {
+    display: inline-block;
+    width: 270px;
+    height: 40px;
+    border: 2.5px solid #EB5428;
+    background-color: #FFFFFF;
+    font-family: "Montserrat";
+    font-size: 16px;
+    padding: 0;
+}
+
+form label {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 1;
+}
+
+form button {
+    display: inline-block;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 0;
+    height: 45px;
+    width: 50px;
+    background-color: #EB5428;
+    border: none;
+}
+
+form svg {
+    height: 40px;
+    stroke: #FFFFFF;
+    background-color: #EB5428;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
+
+h3 {
+    font-family: "Bebas Neue";
+    font-size: 25px;
+}
+
+#details {
+    grid-row: 3/4;
+    background-color: #F2F2F2;
+}
+
+dl {
+    display: inline;
+    text-align: left;
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+dt {
+    display: inline;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+dd {
+    margin: 0;
+    display: inline;
+}
+
+#ingredients {
+    background-color: #F2F2F2;
+}
+
+#ingredients ul {
+    list-style: square;
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 32px;
+    padding: 0px;
+    margin: 0 0 0 25px;
+}
+
+#directions {
+    background-color: #F2F2F2;
+}
+
+#directions ol {
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0px;
+}
+
+#directions li {
+    margin: 15px 15px 20px 25px;
+}
+
+#sides {
+    display: grid;
+    background-color: #7ABFBF;
+}
+
+#sides div {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    margin-left: 10px;
+    margin-top: 45px;
+}
+
+#sides img {
+    height: 100px;
+    width: 100px;
+    grid-column: 1/2;
+}
+
+#sides p, #sides h3 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 45px;
+    margin: 0px;
+}
+
+#sides h2 {
+    margin-bottom: -10px;
+}
+
+#sides p {
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+#sides h3 {
+    margin-top: -5px;
+}
+
+#sides p:first-of-type {
+    margin-top: 40px;
+}
+
+#sides p:nth-of-type(2) {
+    margin-left: 5px;
+}
+
+#sides p:last-of-type {
+    position: relative;
+    top: 70px;
+    margin-left: 0px;
+}
+
+#sides div span:first-of-type {
+    display: inline-block;
+    margin-left: 5px;
+    width: 280px;
+    font-weight: 700;
+}
+
+#sides svg {
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+#sides div:last-of-type {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #FFFFFF;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    height: 390px;
+    margin-top: 20px;
+}
+
+#social figure {
+    display: inline-block;
+    margin: 50px 20px 0 20px;
+}
+
+#social figcaption {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    color: #EB5428;
+    margin-top: -5px;
+}
+
+#tag {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#tag img {
+    width: 200px;
+    height: 200px;
+    grid-column: 2/4;
+    grid-row: 1/3;
+    margin-top: 20px;
+}
+
+#tag p {
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+#patty {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    list-style: none;
+    width: 414px;
+    height: 420px;
+    z-index: 1;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    top: 80px;
+}
+
+#patty li {
+    height: 60px;
+}
+
+#patty figcaption {
+    height: 60px;
+    padding-top: 18px;
+}
+
+ul a {
+    display: block;
+    text-decoration: none;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    color: #EB5428;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul a:hover {
+    background-color: #EB5428;
+    color: #F2F2F2;
+    transition: 0s;
+}
+
+#patty figure {
+    width: 414px;
+    height: 60px;
+    margin: 0px;
+}
+
+#patty img {
+    display: none;
+}
+
+input#burger:checked ~ #patty {
+    display: grid;
+    grid-template-columns: 414px;
+    grid-template-rows: repeat(7, 60px);
+}
+
+
+@media screen and (min-width:768px) {
+    body {
+        display: grid;
+        width: 768px;
+        grid-template-columns: 140px 1fr 1fr 87px;
+        grid-template-rows: auto;
+        margin: 0 auto;
+        grid-gap: 0px;
+        background-color: #F2F2F2;
+    }
+
+    nav {
+        display: grid;
+        width: 768px;
+        grid-template-columns: 80px 1fr 1fr 80px;
+    }
+    
+    nav label {
+        display: none;
+    }
+
+    #login {
+        grid-column: 4/5;
+    }
+    
+    #patty {
+        display: grid;
+        width: 768px;
+        grid-template-columns: repeat(7, 1fr);
+        height: 120px;
+        border-bottom-style: outset;
+        border-color: #fefdfd;
+    }
+
+    #patty li, #patty a, #patty figure {
+        width: 109.7px;
+        height: 120px;
+    }
+    
+    #patty figcaption {
+        width: 109.7px;
+        height: 25px;
+        padding-top: 0px;
+    }
+
+    #patty img {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+    }
+
+    #patty a:hover {
+        background-color: #EB5428;
+        color: #F2F2F2;
+        border-top: 1px solid #000000;
+        transition: 0.1s;
+    }
+
+    form {
+        z-index: 2;
+        margin-top: 17px;
+        margin-left: 350px;
+        position: fixed;
+        background-color: #F2F2F2;
+    }
+
+    header {
+        height: 100px;
+        background-color: #F2F2F2;
+        color: #000000;
+        text-align: center;
+        font-size: 20px;
+        font-family: "Bebas Neue";
+        grid-column: 1/6;
+        grid-row: 1/2;
+        padding-top: 200px;
+        margin-bottom: -10px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        margin-left: 15px;
+        text-align: left;
+    }
+    
+    #dish {
+        grid-column: 1/6;
+        grid-row: 2/3;
+        background-color: #F2F2F2;
+        display: grid;
+        grid-template-columns: 768px;
+        grid-template-rows: auto;
+        height: 1330px;
+    }
+    
+    #dish img, #dish div {
+        width: 768px;
+        position: relative;
+        bottom: 109px;
+    }
+    
+    #dish div p {
+        display: block;
+        width: 748px;
+        font-family: "Montserrat";
+        font-size: 16px;
+        padding: 10px;
+        margin: 0px;
+    }
+    
+    menu {
+        display: grid;
+        width: 768px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        list-style: none;
+        background-color: transparent;
+        padding: 20px 0 20px 0px;
+        margin: 0 auto;
+        backdrop-filter: blur(100px);
+        z-index: 1;
+    }
+
+    menu svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    menu li p {
+        display: block;
+        width: 40px;
+        height: 22px;
+        overflow: hidden;
+        margin: -10px auto 0 auto;
+    }
+
+    #details {
+        grid-column: 1/5;
+        grid-row: 3/4;
+        text-align: center;
+    }
+
+    #ingredients {
+        grid-column: 1/4;
+        grid-row: 4/5;
+        display: block;
+        width: 200px;
+        flex-direction: column;
+    }
+
+    #directions {
+        grid-column: 3/5;
+        grid-row: 4/5;
+        width: 550px;
+        flex-direction: column;
+    }
+
+    #directions ol {
+        margin-top: 25px;
+    }
+
+    #directions h2 {
+        height: 30px;
+        margin: 5px 0 0 0;
+    }
+
+    #sides {
+        grid-column: 1/5;
+        grid-row: 5/6;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #sides h2 {
+        grid-column: 1/3;
+    }
+
+    #sides div {
+        margin: 20px 0 20px 0;
+    }
+
+    #sides div span:first-of-type {
+        width: 60px;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    #sides h3 {
+        margin-top: 5px;
+    }
+
+    #sides p:first-of-type {
+        margin-top: 50px;
+    }
+
+    footer {
+        grid-column: 1/5;
+        grid-row: 6/7;
+        display: grid;
+        height: 300px;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 350px;
+        margin: 0px;
+    }
+
+    #tag {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-left: 70px;
+    }
+
+    #tag img {
+        width: 175px;
+        height: 175px;
+        margin-top: 40px;
+    }
+
+    #tag p {
+        margin: 0px;
+        padding: 25px 0 0 0px;
+    }
+
+    #social {
+        grid-column: 2/3;
+        width: 400px;
+        margin: 0 0 0 60px;
+    }
+
+    #social figure {
+        display: inline-block;
+        width: 60px;
+        margin: 40px 0 0 30px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    body{
+        display: grid;
+        grid-template-columns: 250px 1030px;
+        grid-template-rows: auto;
+        width: 1280px;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 120px 1fr 120px;
+        width: 1280px;
+        height: 120px;
+    }
+
+    #login, #logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    #login svg, #logo svg {
+        margin-top: 30px;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    #patty {
+        display: grid;
+        grid-template-columns: repeat(7, 100px);
+        width: 840px;
+        margin-left: 280px;
+        margin-top: -80px;
+        position: fixed;
+    }
+
+    form {
+        position: absolute;
+        margin-top: 160px;
+        margin-left: 513px;
+        display: grid;
+        width: 305px;
+        grid-template-columns: 253px 51px;
+        grid-template-rows: 40px;
+        z-index: 0;
+    }
+
+    form input {
+        display: inline-block;
+        width: 240px;
+        border: 2.5px solid #EB5428;
+        background-color: #FFFFFF;
+        font-family: "Montserrat";
+        font-size: 16px;
+        padding: 0;
+    }
+
+    form label, form button {
+        position: relative;
+        right: 10px;
+    }
+    
+    header {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        height: 85px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 20px auto 0px auto;
+        font-size: 35px;
+    }
+
+    #dish {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 120px 510px 650px;
+        grid-template-rows: 690px;
+        height: 690px;
+    }
+
+    #dish img {
+        width: 510px;
+        height: 690px;
+    }
+
+    #dish div {
+        width: 650px;
+    }
+
+    #dish div p {
+        width: 630px;
+        line-height: 28px;
+    }
+
+    #dish img, #dish div {
+        position: relative;
+        top: 0px;
+    }
+
+    menu {
+        display: inline-flex;
+        flex-direction: column;
+        width: 116px;
+        height: 627px;
+        padding-top: 40px;
+        background-color: #FFFFFF;
+        border: 2px outset #EB5428;
+        margin-left: 0px;
+    }
+
+    menu svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    menu li {
+        width: 120px;
+        height: 80px;
+    }
+
+    menu li p {
+        width: 40px;
+        height: 22px;
+        overflow: hidden;
+    }
+
+    #details {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        background-color: #0D0D0D;
+        color: #7ABFBF;
+    }
+
+    #details dl {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    dt {
+        grid-row: 1/2;
+    }
+
+    dd {
+        grid-row: 2/3;
+    }
+
+    #directions {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        width: 1000px;
+        margin-top: 2px;
+        padding-left: 20px;
+    }
+
+    #sides {
+        grid-column: 1/3;
+        grid-row: 5/6;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px 1fr;
+        column-gap: 0px;
+    }
+
+    #sides h2 {
+        grid-column: 2/4;
+    }
+
+    #sides div {
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 45px 45px 45px;
+        width: 250px;
+        padding: 0 25px;
+        margin: 10px 0 0 0;
+        justify-self: center;
+    }
+
+    #sides img {
+        grid-row: 1/2;
+        width: 250px;
+        height: 250px;
+    }
+
+    #sides h3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: left;
+        width: 120px;
+        margin: 10px 0 0 0;
+        padding-left: 10px;
+    }
+
+    #sides p:first-of-type {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 230px;
+        margin: 0px;
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+
+    #sides p:last-of-type {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0px;
+        padding-left: 10px;
+    }
+
+    #sides svg {
+        margin-bottom: -3px;
+    }
+
+    footer {
+        grid-column: 1/3;
+        grid-row: 6/7;
+        display: grid;
+        grid-template-columns: 665px 1fr;
+        height: 230px;
+    }
+
+    #tag {
+        display: grid;
+        height: 230px;
+        margin-left: 10px;
+        grid-template-columns: repeat(3, 125px);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #tag img {
+        grid-column: 1/3;
+    }
+
+    #tag p {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        padding: 60px 35px 0 0;
+    }
+
+    #social {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        height: 230px;
+        width: 615px;
+        margin: 0;
+    }
+
+}
