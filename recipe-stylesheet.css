@@ -19,7 +19,6 @@ body {
 
 header {
     height: 100px;
-    background-color: #F2F2F2;
     color: #000000;
     text-align: center;
     font-size: 20px;
@@ -29,11 +28,7 @@ header {
     padding-top: 150px;
 }
 
-#dish {
-    background-color: #F2F2F2;
-    display: grid;
-    grid-template-columns: 414px;
-    grid-template-rows: auto;   
+#dish {  
     grid-column: 1/2;
     grid-row: 2/3;
 }
@@ -43,7 +38,6 @@ header {
 }
 
 #dish div p {
-    display: block;
     width: 400px;
     font-family: "Montserrat";
     font-size: 16px;
@@ -55,7 +49,6 @@ menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
-    background-color: #F2F2F2;
     padding: 0px;
     margin: 0 auto 10px auto;
 }
@@ -198,7 +191,6 @@ h3 {
 
 #details {
     grid-row: 3/4;
-    background-color: #F2F2F2;
 }
 
 dl {
@@ -211,17 +203,12 @@ dl {
 dt {
     display: inline;
     font-weight: 700;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 dd {
     margin: 0;
     display: inline;
-}
-
-#ingredients {
-    background-color: #F2F2F2;
 }
 
 #ingredients ul {
@@ -231,10 +218,6 @@ dd {
     line-height: 32px;
     padding: 0px;
     margin: 0 0 0 25px;
-}
-
-#directions {
-    background-color: #F2F2F2;
 }
 
 #directions ol {
@@ -252,10 +235,9 @@ dd {
     display: grid;
     grid-template-rows: 60px repeat(4, 120px);
     width: 414px;
-    height: 581px;
+    height: 585px;
     row-gap: 10px;
     background-color: #7ABFBF;
-    z-index: 2;
 }
 
 #sides div {
@@ -303,7 +285,7 @@ dd {
 #sides p:last-of-type {
     position: relative;
     top: 70px;
-    margin-left: 0px;
+    margin-left: -5px;
 }
 
 #sides div span:first-of-type {
@@ -851,6 +833,7 @@ input#burger:checked ~ #patty {
         grid-row: 6/7;
         display: grid;
         grid-template-columns: 665px 1fr;
+        width: 1280px;
         height: 230px;
     }
     #tag {
